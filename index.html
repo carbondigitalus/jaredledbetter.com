@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        $( document ).ready(function() {
+            // delcare files 
+            const headFile = "template/head.html";
+            const headerFile = "template/header.html";
+            const footerFile = "template/footer.html";
+            const scriptFile = "template/scripts.html";
+            // declare variable location
+            const headSection = $("#headFile")
+            const headerSection = $("body").find("{{header}}");
+            const footerSection = $("body").find("{{footer}}");
+            const scriptSection = $("body").find("{{scripts}}");
+            // replace content 
+            
+            headSection.replace(/{{head}}/g, "template/head.html");
+            const header = headerSection.load(headerFile);
+            header.replace(/{{header}}/g, headerFile);
+        });
+    </script>
+
+</head>
+<body class="shop home-page">
+
+    <div> {{header}}</div>
+
+
+			<!-- Content -->
+			<div class="content clearfix">
+
+				<!-- Fullscreen Slider Section -->
+				<section class="section-block featured-media window-height tm-slider-parallax-container">
+					<div class="tm-slider-container full-width-slider" data-featured-slider data-parallax>
+						<ul class="tms-slides">
+							<li class="tms-slide" data-image data-as-bkg-image data-force-fit data-overlay-bkg-color="#000000" data-overlay-bkg-opacity="0.75">
+								<div class="tms-content">
+									<div class="tms-content-inner left left-on-mobile v-align-middle">
+										<div class="row">
+											<div class="column width-12">
+												<div class="tms-caption thumbnail profile-image pull-left clear-float-on-mobile"
+													data-animate-in="preset:slideInUpShort;duration:1000ms;"
+												>
+<!--                                                <img class="rounded" data-src="images/iPhone.JPG" src="images/iPhone.JPG" alt="Jared">-->
+												</div>
+												<div class="pull-left clear-float-on-mobile">
+													<h1 class="tms-caption color-white title-large mb-20 mb-mobile-20"
+													data-animate-in="preset:slideInUpShort;duration:1000ms;delay:200ms;"
+													data-no-scale
+													>
+														Jared Ledbetter<br>Front-End Web Developer<br><span class="opacity-05">Pennsylvania</span>
+													</h1>
+													<div class="clear"></div>
+														<a href="#about" class="tms-caption color-white scroll-link icon-down-open-mini large hide-on-mobile" data-offset="-60" 
+														data-animate-in="preset:slideInDownShort;duration:1000ms;delay:1000ms;"
+														data-no-scale>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<img data-src="images/architecture-2804083_1280.jpg" data-retina src="images/architecture-2804083_1280.jpg" alt=""/>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Fullscreen Slider Section End -->
+
+				<!-- Feature Section 3
+				<section class="section-block feature-3 bkg-grey-ultralight">
+					<div class="feature-content">
+						<div class="feature-content-inner left pt-80 pt-mobile-10">
+							<div class="row">
+								<div class="column width-12">
+									<div class="thumbnail profile-image pull-left clear-float-on-mobile">
+										<img class="rounded" src="images/resume/generic/team-avatar.jpg" alt="">
+									</div>
+									<div class="pull-left clear-float-on-mobile">
+										<h1 class="color-charcoal title-large weight-bold mb-10">Hello, I'm Jason<br>A Creative Art Director.</h1>
+										<p class="lead mb-20">
+											Designer &amp; Entrepreneur
+										</p>
+										<ul class="social-list list-horizontal">
+											<li><a href="#" class="color-grey"><span class="icon-twitter-with-circle medium"></span></a></li>
+											<li><a href="#" class="color-grey"><span class="icon-facebook-with-circle medium"></span></a></li>
+											<li><a href="#" class="color-grey"><span class="icon-dribbble-with-circle medium"></span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				Feature Section 3 -->
+
+				<!-- Intro Section -->
+				<section id="about" class="section-block replicable-content">
+					<div class="row">
+						<div class="column width-6">
+							<h2 class="mb-80">Who I Am and What I Do.</h2>
+							<p>I'm Jared, a highly motivated Marine Veteran and front-end web developer with more than a decade of experience. I've worked with several large and small brands and I'm always up for a good challenge. Check out my experience, my work and let's get started on your project.</p>
+							<p class="mb-mobile-80">For every web project that I have done my focus has been on creating the best user experience possible.</p>
+						</div>
+						<div class="column width-6">
+							<h2 class="mb-80">My Main Skills.</h2>
+							<span class="progress-bar-label text-uppercase"><span class="weight-bold">HTML</span><span class="pull-right">90%</span></span>
+							<div class="progress-bar small bkg-grey-ultralight">
+								<div class="bar bkg-theme color-white percent-90 horizon"
+									data-animate-in="transX:-100%;duration:1000ms;easing:swing;">
+								</div>
+							</div>
+							<span class="progress-bar-label text-uppercase"><span class="weight-bold">CSS</span><span class="pull-right">90%</span></span>
+							<div class="progress-bar small bkg-grey-ultralight">
+								<div class="bar bkg-theme color-white percent-90 horizon"
+									data-animate-in="transX:-100%;duration:1000ms;easing:swing;">
+								</div>
+							</div>
+							<span class="progress-bar-label text-uppercase"><span class="weight-bold">Javascript</span><span class="pull-right">80%</span></span>
+							<div class="progress-bar small bkg-grey-ultralight">
+								<div class="bar bkg-theme color-white percent-80 horizon"
+									data-animate-in="transX:-100%;duration:1000ms;easing:swing;">
+								</div>
+							</div>
+							<span class="progress-bar-label text-uppercase"><span class="weight-bold">jQuery</span><span class="pull-right">80%</span></span>
+							<div class="progress-bar small bkg-grey-ultralight">
+								<div class="bar bkg-theme color-white percent-80 horizon"
+									data-animate-in="transX:-100%;duration:1000ms;easing:swing;">
+								</div>
+							</div>
+							<span class="progress-bar-label text-uppercase"><span class="weight-bold">WordPress</span><span class="pull-right">90%</span></span>
+							<div class="progress-bar small bkg-grey-ultralight">
+								<div class="bar bkg-theme color-white percent-90 horizon"
+									data-animate-in="transX:-100%;duration:1000ms;easing:swing;">
+								</div>
+							</div>
+							<span class="progress-bar-label text-uppercase"><span class="weight-bold">Squarespace</span><span class="pull-right">90%</span></span>
+							<div class="progress-bar small bkg-grey-ultralight">
+								<div class="bar bkg-theme color-white percent-90 horizon"
+									data-animate-in="transX:-100%;duration:1000ms;easing:swing;">
+								</div>
+							</div>
+							<span class="progress-bar-label text-uppercase"><span class="weight-bold">Shopify</span><span class="pull-right">90%</span></span>
+							<div class="progress-bar small bkg-grey-ultralight">
+								<div class="bar bkg-theme color-white percent-90 horizon"
+									data-animate-in="transX:-100%;duration:1000ms;easing:swing;">
+								</div>
+							</div>
+							<span class="progress-bar-label text-uppercase"><span class="weight-bold">Adobe Illustrator</span><span class="pull-right">80%</span></span>
+							<div class="progress-bar small bkg-grey-ultralight">
+								<div class="bar bkg-theme color-white percent-80 horizon"
+									data-animate-in="transX:-100%;duration:1000ms;easing:swing;">
+								</div>
+							</div>
+							<span class="progress-bar-label text-uppercase"><span class="weight-bold">Adobe Photoshop</span><span class="pull-right">80%</span></span>
+							<div class="progress-bar small bkg-grey-ultralight">
+								<div class="bar bkg-theme color-white percent-80 horizon"
+									data-animate-in="transX:-100%;duration:1000ms;easing:swing;">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Intro Section End -->
+
+				<!-- Timeline Section -->
+				<section class="section-block replicable-content bkg-grey-ultralight">
+					<div class="row">
+						<div class="column width-12">
+							<h2 class="mb-80">Work and Experience.</h2>
+						</div>
+						<div class="column width-10 offset-2">
+							<ul class="timeline vertical-indication">
+								<li>
+									<div class="row">
+										<div class="timeline-title column width-3 right left-on-mobile">
+											<div class="horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;">
+												<h5 class="color-grey-light title-small text-uppercase no-margin-bottom">5 Years</h5>
+												<p>20014-2019</p>
+											</div>
+										</div>
+										<div class="timeline-description column width-9">
+											<div class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;">
+												<h4 class="mb-10 color-theme">Gorilla Gi Co. LLC</h4>
+												<p class="mb-70">I operated the entire e-commerce business by myself. My biggest achievements here were creating my website on WordPress, and later migrating to Shopify, creating and vectorizing martial arts school logos, and creating a slew of martial arts product mockups (BJJ Gis, Rashguards, NoGi Shorts, T-Shirts, Hoodies, Hats, Boxing Gloves, and more).</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="timeline-title column width-3 right left-on-mobile">
+											<div class="horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;delay:200ms;">
+												<h5 class="color-grey-light title-small text-uppercase no-margin-bottom">2 Years</h5>
+												<p>20017-2019</p>
+											</div>
+										</div>
+										<div class="timeline-description column width-9">
+											<div class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;delay:200ms;">
+												<h4 class="mb-10 color-theme">Fighter Solutions</h4>
+												<p class="mb-70">As an extension of Gorilla Gi Co., Fighter Solutions was a digital solutions firm that specialized in the martial arts industry. I basically, took all of my experiences and needs from Gorilla Gi Co. and put them into an agency for martial arts athletes, schools, brands and manufacturers. The services provided are listed below.<br>
+                                                1. Graphic Design: Logos, Product Mockups and Social Media marketing images<br>
+                                                2. Web Design &amp; Development: Building custom websites from start to finish.<br>
+                                                3. Business Development &amp; Coaching: Working with schools, brands and manufacturers to make their business operate better and help the leadership make better sound decisions.<br>
+                                                4. Marketing &amp; Advertising: Creating marketing strategies, executing them, and advertising in popular channels such as print, Google and Social Media.
+												</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="timeline-title column width-3 right left-on-mobile">
+											<div class="horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;delay:400ms;">
+												<h5 class="color-grey-light title-small text-uppercase no-margin-bottom">1 Year So Far</h5>
+												<p>2018-Present</p>
+											</div>
+										</div>
+										<div class="timeline-description column width-9">
+											<div class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;delay:400ms;">
+												<h4 class="mb-10 color-theme">CPR Digital LLC</h4>
+												<p class="mb-70">Hired part-time as a Junior Developer. Recieved formal training in HTML, CSS, JavaScript, jQuery and more. CPR Digital specialized in front-end web development for Squarespace and custom coded websites. We also make WordPress websites at times.</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="timeline-title column width-3 right left-on-mobile">
+											<div class="horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;delay:400ms;">
+												<h5 class="color-grey-light title-small text-uppercase no-margin-bottom">1 Year So Far</h5>
+												<p>2019-Present</p>
+											</div>
+										</div>
+										<div class="timeline-description column width-9">
+											<div class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;delay:400ms;">
+												<h4 class="mb-10 color-theme">Carbon Digital LLC</h4>
+                                                <p class="mb-70">Gorilla Gi Co. and Fighter Solutions were dissolved into Carbon Digital to consolidate all services and expand into larger niches. The same services are now provided for all industries.<br>
+                                                1. Graphic Design: Logos, Product Mockups and Social Media marketing images<br>
+                                                2. Web Design &amp; Development: Building custom websites from start to finish.<br>
+                                                3. Business Development &amp; Coaching: Working with schools, brands and manufacturers to make their business operate better and help the leadership make better sound decisions.<br>
+                                                4. Marketing &amp; Advertising: Creating marketing strategies, executing them, and advertising in popular channels such as print, Google and Social Media.
+												</p>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="section-block replicable-content">
+					<div class="row">
+						<div class="column width-12">
+							<h2 class="mb-80">College and Training.</h2>
+						</div>
+						<div class="column width-10 offset-2">
+							<ul class="timeline vertical-indication">
+								<li>
+									<div class="row">
+										<div class="timeline-title column width-3 right left-on-mobile">
+											<div class="horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;">
+												<h5 class="color-grey-light title-small text-uppercase no-margin-bottom">2016</h5>
+											</div>
+										</div>
+										<div class="timeline-description column width-9">
+											<div class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;">
+												<h4 class="no-margin-bottom color-theme">University of Maryland University College</h4>
+												<p class="mb-10 color-grey-light"><em>Associate's in Arts: Management Studies</em></p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="timeline-title column width-3 right left-on-mobile">
+											<div class="horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;delay:100ms;">
+												<h5 class="color-grey-light title-small text-uppercase no-margin-bottom">2018</h5>
+											</div>
+										</div>
+										<div class="timeline-description column width-9">
+											<div class="horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;delay:100ms;">
+												<h4 class="no-margin-bottom color-theme">Treehouse Island, Inc. (<a href="https://teamtreehouse.com">TeamTreehouse.com</a>)</h4>
+												<p class="mb-10 color-grey-light"><em>Front-End Web Developer Track</em></p>
+                                                <p class="mb-10 color-grey-light"><em>Digital Literacy Track</em></p>
+                                                <p class="mb-10 color-grey-light"><em>Web Design Track</em></p>
+                                                <p class="mb-10 color-grey-light"><em>Beginning JavaScript Track</em></p>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- Timeline End -->
+
+			</div>
+			<!-- Content End -->
+            
+{{footer}}
+
+		</div>
+	</div>
+
+{{scripts}}
+</body>
+</html>
